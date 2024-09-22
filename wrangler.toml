@@ -12,15 +12,15 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
- routes = [
-   { pattern = "docker.heiye.dev", custom_domain = true },
-   { pattern = "quay.heiye.dev", custom_domain = true },
-   { pattern = "gcr.heiye.dev", custom_domain = true },
-   { pattern = "k8s-gcr.heiye.dev", custom_domain = true },
-   { pattern = "k8s.heiye.dev", custom_domain = true },
-   { pattern = "ghcr.heiye.dev", custom_domain = true },
-   { pattern = "cloudsmith.heiye.dev", custom_domain = true },
- ]
+routes = [
+  { pattern = "docker.heiye.dev", custom_domain = true },
+  { pattern = "quay.heiye.dev", custom_domain = true },
+  { pattern = "gcr.heiye.dev", custom_domain = true },
+  { pattern = "k8s-gcr.heiye.dev", custom_domain = true },
+  { pattern = "k8s.heiye.dev", custom_domain = true },
+  { pattern = "ghcr.heiye.dev", custom_domain = true },
+  { pattern = "cloudsmith.heiye.dev", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
